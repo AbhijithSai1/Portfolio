@@ -116,7 +116,7 @@ export const NavBar = () => {
             </Nav.Link>
 
             <Nav.Link
-              href="https://drive.google.com/file/d/1r4ZU_mnYPHSWID8t-YeLOftY00-vLbgw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JLxd6vvkV4kdThIaxQfhPZ4o3WyH9RKL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="navbar-link"
@@ -137,7 +137,7 @@ export const NavBar = () => {
               <a href="https://github.com/abhijithsai1" target="_blank">
                 <img src={navIcon2} alt="GitHub" />
               </a>
-              <a href="mailto:abhijithadmits@gmail.com">
+              <a href="mailto:abhijithsaiadmits@gmail.com">
                 <img src={navIcon3} alt="Gmail" />
               </a>
             </div>

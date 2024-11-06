@@ -26,7 +26,7 @@ export const Footer = () => {
             {/* Contact Information */}
             <p className="contact-info">
               <strong>Contact Information:</strong> <br />
-              <a href="mailto:abhijithadmits@gmail.com">
+              <a href="mailto:abhijithsaiadmits@gmail.com">
                 abhijithadmits@gmail.com
               </a>{" "}
               <br />
@@ -50,7 +50,7 @@ export const Footer = () => {
               >
                 <img src={navIcon2} alt="GitHub" />
               </a>
-              <a href="mailto:abhijithadmits@gmail.com" target="_blank">
+              <a href="mailto:abhijithsaiadmits@gmail.com" target="_blank">
                 <img src={navIcon3} alt="Gmail" />
               </a>
             </div>
