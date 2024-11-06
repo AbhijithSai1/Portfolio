@@ -27,7 +27,7 @@ export const Footer = () => {
             <p className="contact-info">
               <strong>Contact Information:</strong> <br />
               <a href="mailto:abhijithsaiadmits@gmail.com">
-                abhijithadmits@gmail.com
+                abhijithsaiadmits@gmail.com
               </a>{" "}
               <br />
               <a href="tel:+19714257625">+1 971-425-7625</a> <br />
