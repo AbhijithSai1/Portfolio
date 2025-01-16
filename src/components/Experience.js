@@ -5,8 +5,8 @@ import "../App.css"; // Assuming your CSS file for additional styles is properly
 
 export const Experience = () => {
   const experiences = [
-    {
-      /*role: "Full Stack Developer",
+   /* {
+      role: "Full Stack Developer",
       company: "Morgan Stanley",
       location: "TX, USA",
       duration: "Jan 2024 - Present",
