@@ -6,7 +6,7 @@ import "../App.css"; // Assuming your CSS file for additional styles is properly
 export const Experience = () => {
   const experiences = [
     {
-      role: "Full Stack Developer",
+      /*role: "Full Stack Developer",
       company: "Morgan Stanley",
       location: "TX, USA",
       duration: "Jan 2024 - Present",
@@ -32,29 +32,83 @@ export const Experience = () => {
         `Leveraged Kotlin’s null safety features and concise syntax to reduce boilerplate code by 30% in banking microservices,
         improving code maintainability and reducing potential runtime errors.`,
       ],
+    },*/
+      {
+      role: "Software Developer",
+      company: "Discover",
+      location: "TX, USA",
+      duration: "Aug 2024 - Present",
+      description: [
+        `Engineered scalable software solutions using Java, Python, Spring Boot, and microservices architecture, resulting in a
+30% boost in system performance and a 25% reduction in transaction processing times for critical financial operations.`,
+`Optimized database operations with PostgreSQL and MongoDB, reducing query execution times by 40%, improving
+system responsiveness, and enabling seamless high-volume data processing.`,
+`Migrated legacy systems to AWS and Azure, achieving a 20% reduction in infrastructure costs, enhancing scalability, and
+bolstering disaster recovery capabilities.`,
+`Automated build and deployment pipelines using Jenkins, Docker, and Kubernetes, decreasing deployment cycles by 50%
+and ensuring error-free production releases.`,
+`Enhanced application security with Spring Security and encryption protocols, ensuring compliance with PCI DSS and
+mitigating security risks for sensitive customer data.`,
+`Delivered user-friendly, responsive interfaces using React.js, HTML5, CSS3, and Bootstrap, improving customer
+engagement and usability across applications.`,
+`Conducted code reviews, and established best practices, reducing post-launch defects by 15% and fostering a culture of
+continuous improvement.`,
+`Designed RESTful APIs and backend services, facilitating real-time communication with third-party systems and
+enhancing system integration efficiency.`,
+      ],
     },
     {
       role: "Full Stack Developer",
-      company: "Aspen Insurance",
+      company: "Cognizant",
       location: "Hyderabad, India",
       duration: "Apr 2021 - Dec 2022",
       description: [
-        `Optimized backend services using Java and Spring Boot, reducing response times by 40% and directly enhancing system
-        performance, user satisfaction, leading to increased customer retention.`,
-        `Utilized Kubernetes and Docker for containerized deployments, ensuring scalability and resource efficiency.`,
-        `Designed and developed REST APIs to enable seamless data exchange between frontend and backend systems, enhancing
-data flow and driving a 20% increase in operational efficiency, leading to faster decision-making for business processes.`,
-        `Developed and enforced server-side validations and robust security measures, ensuring high data integrity, reducing data
-breaches by 25%, and significantly lowering system errors, which increased customer trust and reduced support tickets.`,
-        `Engineered a scalable serverless infrastructure leveraging AWS services (API Gateway, Lambda, DynamoDB), cutting
-operational costs by 20%. This solution allowed the company to scale services dynamically, accommodating growing
-customer demand without performance degradation.`,
-        `Integrated Apache Kafka for real-time messaging, boosting data processing efficiency by 30% and reducing deployment
-time by 25% through effective CI/CD practices, enabling faster release cycles and more responsive business operations.`,
-        `Developed and managed payment processing services with Java, Spring Boot, AWS Cloud reducing errors by 20% and
-improving transaction reliability, leading to an 18% increase in successful transactions and a smoother user experience.`,
+        `Designed and developed custom single-page applications (SPAs) using React.js, AngularJS, and Tailwind CSS, improving
+operational efficiency for insurance policy and claims management platforms and reducing processing time for key
+workflows.`,
+`Designed scalable, modular applications using Spring Boot and Hibernate, reducing system downtime by 25% and
+streamlining claims validation and premium calculation processes.`,
+`Created and optimized APIs using Postman and SOAP UI, enabling seamless integration with third-party systems for
+real-time insurance quotes and claims tracking.`,
+`Enhanced database performance using PostgreSQL, MySQL, and MongoDB, achieving a 30% improvement in query
+efficiency and ensuring data consistency across modules.`,
+`Secured applications with Spring Security, implementing authentication and authorization protocols that reduced security
+vulnerabilities by 40%.`,
+`Improved deployment pipelines using Jenkins, Docker, and Maven, increasing deployment frequency by 35% while
+minimizing operational risks.`,
+`Developed unit tests with JUnit and Mockito, achieving a 20% reduction in production defects by adhering to Test-Driven
+Development (TDD) practices.`,
+`Collaborated with cross-functional teams to align technical solutions with client requirements, delivering projects within
+stringent deadlines and receiving client commendations.`,
       ],
     },
+
+
+    {
+      role: "Junior Software Developer",
+      company: "HSBC Bank",
+      location: "Hyderabad, India",
+      duration: "Apr 2020 - Dec 2020",
+      description: [
+        `Built backend microservices using Spring Boot and Hibernate, improving scalability and enabling seamless integration
+with front-end applications, resulting in a 15% increase in operational efficiency.`,
+`Optimized database queries, stored procedures, and triggers in MySQL and PostgreSQL, improving data handling and
+reducing query execution times by 20%.`,
+`Designed and implemented RESTful and SOAP APIs, facilitating secure and efficient data exchange across banking
+systems and third-party integrations.`,
+`Developed dynamic, user-focused web interfaces with AngularJS, HTML5, CSS3, and jQuery, enhancing user satisfaction
+and reducing support tickets by 10%.`,
+`Strengthened security with Spring Security, applying role-based access controls and encryption mechanisms, ensuring
+compliance with internal and external security standards.`,
+`Automated deployment workflows with Jenkins and Docker, reducing manual intervention and deployment errors by 30%.`,
+`Conducted comprehensive testing using JUnit and Mockito, identifying and resolving defects early, leading to a 25%
+improvement in code quality.`,
+`Partnered with cross-functional teams in Agile/Scrum environments to ensure timely delivery of high-priority features,
+consistently meeting sprint goals.`,
+      ],
+    },
+
+    
     // {
     //   role: "Full Stack Engineer Intern",
     //   company: "Verzeo Technologies",
