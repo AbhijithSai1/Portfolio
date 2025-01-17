@@ -116,7 +116,7 @@ export const NavBar = () => {
             </Nav.Link>
 
             <Nav.Link
-              href="https://drive.google.com/file/d/1JLxd6vvkV4kdThIaxQfhPZ4o3WyH9RKL/view?usp=sharing"
+              href="https://drive.google.com/file/d/1hi4Snf3uHr_pFOM_PhSaoOfLpruLnOl4/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="navbar-link"
