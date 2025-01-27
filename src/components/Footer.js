@@ -31,7 +31,7 @@ export const Footer = () => {
               </a>{" "}
               <br />
               <a href="tel:+19714257625">+1 971-425-7625</a> <br />
-             /* Cincinnati, Ohio*/
+                         {/*  Cincinnati, Ohio */}
             </p>
 
             {/* Social Icons */}
