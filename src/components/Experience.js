@@ -7,11 +7,8 @@ export const Experience = () => {
   const experiences = [
    /* {
       role: "Full Stack Developer",
-      company: "Morgan Stanley",
-      location: "TX, USA",
-      duration: "Jan 2024 - Present",
       description: [
-        `Developed and maintained backend services using Kotlin, Java, Spring Boot, and Hibernate, improving system reliability
+        `Developed and maintained Morgan Stanley backend services using Kotlin, Java, Spring Boot, and Hibernate, improving system reliability
         and reducing downtime by 15% through effective troubleshooting and problem-solving.`,
         `Architected microservices for core banking functions, accelerating feature deployment by 20% and enhancing modularity
         through innovative design patterns in Kotlin.`,
@@ -37,7 +34,7 @@ export const Experience = () => {
       role: "Software Developer",
       company: "Discover",
       location: "TX, USA",
-      duration: "Aug 2024 - Present",
+      duration: "Feb 2024 - Present",
       description: [
         `Engineered scalable software solutions using Java, Python, Spring Boot, and microservices architecture, resulting in a
 30% boost in system performance and a 25% reduction in transaction processing times for critical financial operations.`,
@@ -107,70 +104,9 @@ improvement in code quality.`,
 consistently meeting sprint goals.`,
       ],
     },
-
-    
-    // {
-    //   role: "Full Stack Engineer Intern",
-    //   company: "Verzeo Technologies",
-    //   location: "Hyderabad, India",
-    //   duration: "Apr 2020 - Aug 2020",
-    //   description: [
-    //     "Developed and maintained applications using Java and Angular.",
-    //     "Developed RESTful APIs, improving data exchange efficiency.",
-    //     "Managed containerized applications with Docker and Kubernetes.",
-    //     "Implemented security best practices, ensuring data integrity.",
-    //   ],
-    // },
   ];
 
-  /*
-export const Experience = () => {
- const experiences = [
-    {
-      role: "Software Engineer",
-      company: "McAfee",
-      location: "TX, USA",
-      duration: "Jan 2024 - Aug 2024",
-      description: [
-        `Developed backend services using Java and Spring Boot, improving system reliability and reducing downtime by 10%, leading to smoother customer transactions.`,
-        `Architected microservices with Spring Boot and Hibernate, which accelerated feature deployment by 15% and enhanced system modularity, resulting in easier maintenance and scalability.`,
-        `Integrated advanced messaging systems such as Kafka and RabbitMQ, increasing data processing efficiency by 15% and enabling more responsive data-driven applications.`,
-        `Refined CI/CD pipelines with Jenkins and Docker, automating build and deployment processes, reducing deployment times by 20%, and minimizing manual errors during releases.`,
-        `Implemented AWS Cloud Services including EC2, S3, and Lambda, which contributed to resilient solutions and improved system performance, leading to a 10% reduction in operational costs.`,
-        `Collaborated with cross-functional teams in an Agile environment, ensuring that 85% of sprint goals were consistently met, contributing to the overall success of software delivery.`,
-      ],
-    },
-    {
-      role: "Full Stack Developer",
-      company: "Aspen Insurance",
-      location: "Hyderabad, India",
-      duration: "Apr 2021 - Dec 2022",
-      description: [
-        `Enhanced backend services with Java and Spring Boot, reducing response times by 40% and improving overall system performance, which resulted in faster claim processing and improved client interactions, increasing customer retention.`,
-        `Developed payment processing services on Azure Cloud, reducing errors in premium payments by 20% and increasing successful transactions by 18%, leading to a more reliable and efficient payment system for policyholders.`,
-        `Created and integrated REST APIs with GraphQL, improving data flow between underwriting, claims, and customer service systems, increasing operational efficiency by 20%, and enabling quicker and more accurate policy adjustments.`,
-        `Strengthened security by implementing strong server-side validations, reducing data breaches by 25% and minimizing policyholder data errors, which increased trust and reduced the number of security-related incidents.`,
-        `Streamlined containerized deployments using Kubernetes and Docker on Azure, ensuring scalability and compliance with industry regulations, enabling smoother updates and maintenance of critical insurance applications.`,
-        `Built serverless infrastructure on Azure, reducing operational costs by 20% and enabling dynamic scaling to handle fluctuations in claims processing and policy issuance during peak periods.`,
-        `Leveraged Azure Event Hubs for real-time messaging, improving the efficiency of data processing related to claims, underwriting, and customer interactions by 30%, allowing for quicker decision-making and enhanced customer service.`,
-      ],
-    },
-    {
-      role: "Full Stack Engineer Intern",
-      company: "Verzeo Technologies",
-      location: "Hyderabad, India",
-      duration: "Nov 2020 - Apr 2021",
-      description: [
-        `Developed and maintained applications using Java and Angular, ensuring responsiveness and cross-browser compatibility.`,
-        `Designed and implemented RESTful APIs to enable seamless data exchange between frontend and backend systems.`,
-        `Developed and deployed containerized applications using Docker and managed them using Kubernetes.`,
-        `Collaborated with the frontend team to optimize the user interface and improve performance across devices and browsers.`,
-        `Contributed to CI/CD pipelines using Jenkins to automate build and deployment processes.`,
-        `Implemented security best practices to ensure data integrity and protection within applications.`,
-      ],
-    },
-  ];
-  */
+ 
   const containerStyle = {
     backgroundImage: `url(${colorSharp2})`,
     backgroundSize: "cover",
