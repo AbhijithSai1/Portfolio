@@ -51,7 +51,7 @@ export const Experience = () => {
     `Managed secure configuration and secrets using Vault for environment-specific deployments, ensuring compliance with enterprise security standards.`,
     `Built a lightweight React-based operational dashboard providing real-time visibility into application health, environment-wise deployments, runtime Java/Spring Boot versions, and Git release metadata (deployer, timestamp, commit), enhancing audit traceability and production transparency.`
   ],
-}
+},
       {
       role: "Software Developer",
       company: "Discover",
