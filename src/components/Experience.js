@@ -30,11 +30,33 @@ export const Experience = () => {
         improving code maintainability and reducing potential runtime errors.`,
       ],
     },*/
+    {
+  role: "Software Developer",
+  company: "T-Mobile",
+  location: "Frisco, TX, USA",
+  duration: "May 2025 - Present",
+  description: [
+    `Contributed to CAMS (Core Account Management Services) modernization by developing and supporting Spring Boot-based microservices handling high-volume customer account operations across distributed environments.`,
+    `Executed Spring Boot upgrades across multiple services (3.5.x), resolving dependency conflicts, configuration drift, and regression issues, improving build stability and reducing environment-specific failures by 30%.`,
+    `Led security vulnerability remediation for 40+ microservices, upgrading vulnerable libraries (OpenSSL, OkHttp, Jackson, Maven plugins) and resolving critical CVEs, ensuring enterprise security compliance and reducing vulnerability backlog to near zero.`,
+    `Implemented enterprise structured logging using Common Logger by replacing legacy Logback across Controller, Service, Endpoint, and Mapper layers, enabling end-to-end request/response traceability and improving MTTR during production incidents.`,
+    `Enabled GUID-based transaction tracing, payload masking, and event classification, significantly improving observability in Splunk dashboards and reducing debugging effort by 40%.`,
+    `Standardized SOAP error handling by enhancing response schemas with statusCategory, errorSystem, and transaction identifiers while maintaining backward compatibility through version-controlled WSDL updates.`,
+    `Contributed to Authorization (AuthZ) integration by implementing gateway token validation and role-based access control policies, strengthening API security posture across services.`,
+    `Supported containerized deployments on Kubernetes (TKE) by building Docker images and executing environment promotions (DEV → QLAB → PROD), including canary deployment validations and rollback verification.`,
+    `Leveraged GitLab CI/CD pipelines to automate builds, vulnerability scans, and deployments, reducing manual release effort and ensuring consistent deployment governance.`,
+    `Provided on-call production support by triaging incidents via Splunk log analysis, identifying upstream vs downstream failures, and coordinating cross-team fixes to restore services within SLA timelines.`,
+    `Assisted in Hystrix resiliency refactoring by validating fallback logic and timeout configurations through backend simulation testing, improving service fault tolerance.`,
+    `Enabled legacy SOAP to modern microservices integrations by implementing contract mapping, payload transformations, and compatibility validation between REST and SOAP layers.`,
+    `Managed secure configuration and secrets using Vault for environment-specific deployments, ensuring compliance with enterprise security standards.`,
+    `Built a lightweight React-based operational dashboard providing real-time visibility into application health, environment-wise deployments, runtime Java/Spring Boot versions, and Git release metadata (deployer, timestamp, commit), enhancing audit traceability and production transparency.`
+  ],
+}
       {
       role: "Software Developer",
       company: "Discover",
       location: "TX, USA",
-      duration: "Feb 2024 - Present",
+      duration: "Aug 2024 - Apr 2025",
       description: [
         `Engineered scalable software solutions using Java, Python, Spring Boot, and microservices architecture, resulting in a
 30% boost in system performance and a 25% reduction in transaction processing times for critical financial operations.`,
