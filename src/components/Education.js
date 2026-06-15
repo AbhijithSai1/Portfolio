@@ -18,7 +18,7 @@ export const Education = () => {
       degree:
         "Bachelor of Engineering in Electronics and Communication Engineering",
       institution: "Osmania University, Hyderabad, India",
-      year: "Aug 2017 - July 2021",
+      // year: "Aug 2017 - July 2021",
       gpa: "8.05/10", // CGPA is added separately to highlight it
       description: `
         Relevant coursework: Computer Organization & Architecture, Computer Networking, Web Programming, Computer Aided Design Tools.
@@ -62,7 +62,11 @@ export const Education = () => {
                       {edu.institution}
                     </h4>
                     <p className="text-center">
-                      <strong>{edu.year}</strong> |{" "}
+                      {edu.year && (
+                        <>
+                          <strong>{edu.year}</strong> |{" "}
+                        </>
+                      )}
                       <span className="highlight-gpa">GPA: {edu.gpa}</span>
                     </p>
                     <p className="description text-center">

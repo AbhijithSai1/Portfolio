@@ -2,12 +2,23 @@ import React from "react";
 import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png"; // Background image
+import project0 from "../assets/img/project0.png";
 import project1 from "../assets/img/project1.jpeg";
 import project2 from "../assets/img/project2.jpeg";
 import project3 from "../assets/img/project3.jpg";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "AI Powered Fitness Recommendation System",
+      description: `
+        • Built an AI-driven fitness app that analyzes workout sessions and generates personalized health insights using machine learning.
+        \n• Implemented real-time analysis of metrics like heart rate, calories burned, and cardiovascular load to deliver actionable recommendations.
+        \n• Designed an intuitive dashboard that surfaces improvement suggestions and zone-based training guidance for each session.
+      `,
+      imgUrl: project0,
+      targetTab: "first",
+    },
     {
       title: "Restaurant Finder Application",
       description: `
@@ -16,7 +27,7 @@ export const Projects = () => {
         \n• Integrated with REST APIs to retrieve restaurant data, using MongoDB for storage.
       `,
       imgUrl: project2,
-      targetTab: "first", // Linking to Project 1 details
+      targetTab: "second",
     },
     {
       title: "Student Management System",
@@ -26,7 +37,7 @@ export const Projects = () => {
         \n• Utilized React components, state management, and dynamic rendering for real-time updates.
       `,
       imgUrl: project1,
-      targetTab: "second", // Linking to Project 2 details
+      targetTab: "third",
     },
     {
       title: "Retail Banking System",
@@ -36,7 +47,7 @@ export const Projects = () => {
         \n• Integrated a chatbot onto the AWS platform to enhance customer service.
       `,
       imgUrl: project3,
-      targetTab: "third", // Linking to Project 3 details
+      targetTab: "fourth",
     },
   ];
 
@@ -57,67 +68,46 @@ export const Projects = () => {
             <h2>Projects</h2>
             <p>Here are a few projects I have worked on:</p>
             <Tab.Container id="project-tabs" defaultActiveKey="first">
-              {/* Project Navigation: Restaurant Finder, Student Management, Retail Banking */}
+              {/* Project Navigation */}
               <Row className="mb-4">
                 <Nav
                   variant="pills"
-                  className="nav-pills justify-content-center align-items-center"
+                  className="nav-pills justify-content-center align-items-center flex-wrap"
                   id="pills-tab"
                 >
                   <Nav.Item>
-                    <Nav.Link eventKey="first">Restaurant Finder</Nav.Link>
+                    <Nav.Link eventKey="first">AI Fitness Recommender</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second">
+                    <Nav.Link eventKey="second">Restaurant Finder</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="third">
                       Student Management System
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="third">Retail Banking</Nav.Link>
+                    <Nav.Link eventKey="fourth">Retail Banking</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Row>
 
               {/* Tab Content: Display Project Details */}
               <Tab.Content>
-                {/* Restaurant Finder details */}
-                <Tab.Pane eventKey="first">
-                  <h3 className="text-center">{projects[0].title}</h3>
-                  <img
-                    src={projects[0].imgUrl}
-                    alt={projects[0].title}
-                    className="project-details-image"
-                  />
-                  <p className="project-description">
-                    {projects[0].description}
-                  </p>
-                </Tab.Pane>
-
-                {/* Student Management System details */}
-                <Tab.Pane eventKey="second">
-                  <h3 className="text-center">{projects[1].title}</h3>
-                  <img
-                    src={projects[1].imgUrl}
-                    alt={projects[1].title}
-                    className="project-details-image"
-                  />
-                  <p className="project-description">
-                    {projects[1].description}
-                  </p>
-                </Tab.Pane>
-
-                {/* Retail Banking System details */}
-                <Tab.Pane eventKey="third">
-                  <h3 className="text-center">{projects[2].title}</h3>
-                  <img
-                    src={projects[2].imgUrl}
-                    alt={projects[2].title}
-                    className="project-details-image"
-                  />
-                  <p className="project-description">
-                    {projects[2].description}
-                  </p>
-                </Tab.Pane>
+                {projects.map((project) => (
+                  <Tab.Pane
+                    key={project.targetTab}
+                    eventKey={project.targetTab}
+                  >
+                    <h3 className="text-center">{project.title}</h3>
+                    <img
+                      src={project.imgUrl}
+                      alt={project.title}
+                      className="project-details-image"
+                    />
+                    <p className="project-description">{project.description}</p>
+                  </Tab.Pane>
+                ))}
               </Tab.Content>
             </Tab.Container>
           </Col>
