@@ -134,7 +134,7 @@ export const NavBar = () => {
               >
                 <img src={navIcon1} alt="LinkedIn" />
               </a>
-              <a href="https://github.com/abhijithsai1" target="_blank">
+              <a href="https://github.com/abhijithsai1" target="_blank" rel="noreferrer">
                 <img src={navIcon2} alt="GitHub" />
               </a>
               <a href="mailto:abhijithsaiadmits@gmail.com">

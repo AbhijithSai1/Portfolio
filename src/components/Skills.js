@@ -17,6 +17,9 @@ import {
   FaShieldAlt,
   FaKey,
   FaUserShield,
+  FaRobot,
+  FaBrain,
+  FaPlug,
 } from "react-icons/fa";
 import {
   SiSpringboot,
@@ -76,6 +79,14 @@ export const Skills = () => {
         { name: "Spring AI", icon: <SiSpringboot /> },
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "Express", icon: <SiExpress /> },
+      ],
+    },
+    {
+      category: "AI & LLMs",
+      skills: [
+        { name: "LangChain4j", icon: <FaRobot /> },
+        { name: "MCP", icon: <FaPlug /> },
+        { name: "LLM Integration", icon: <FaBrain /> },
       ],
     },
     {

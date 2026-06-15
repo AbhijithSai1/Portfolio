@@ -50,7 +50,7 @@ export const Footer = () => {
               >
                 <img src={navIcon2} alt="GitHub" />
               </a>
-              <a href="mailto:abhijithsaiadmits@gmail.com" target="_blank">
+              <a href="mailto:abhijithsaiadmits@gmail.com">
                 <img src={navIcon3} alt="Gmail" />
               </a>
             </div>
