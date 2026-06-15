@@ -231,6 +231,7 @@ p.danger {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
+  min-height: 130px;
   margin-bottom: 20px;
   display: block;
 }

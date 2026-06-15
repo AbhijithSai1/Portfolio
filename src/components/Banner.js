@@ -1,55 +1,52 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 
+const toRotate = [
+  "Abhijith Sai",
+  "Full Stack Developer",
+  "AWS Certified Developer Associate",
+  "Java Developer",
+];
+const PERIOD = 1000;
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = [
-    "Abhijith Sai",
-    "Full Stack Developer",
-    "AWS Certified Developer Associate",
-    "Java Developer",
-  ];
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(150); // Typing speed
-  const period = 1000; // Time before deleting starts
+  const [delta, setDelta] = useState(150);
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+  const tickRef = useRef(null);
 
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
+  // Always point to latest closure so the interval never goes stale
+  tickRef.current = () => {
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
-    if (isDeleting) {
-      setDelta(100); // Deleting speed is slightly faster than typing but still natural
-    } else {
-      setDelta(150); // Typing speed
-    }
-
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setDelta(period); // Pause before deleting starts
+      setDelta(PERIOD);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(150); // Reset typing speed after deleting
+      setLoopNum((prev) => prev + 1);
+      setDelta(150);
+    } else {
+      setDelta(isDeleting ? 100 : 150);
     }
   };
+
+  useEffect(() => {
+    const ticker = setInterval(() => {
+      tickRef.current();
+    }, delta);
+    return () => clearInterval(ticker);
+  }, [delta]);
 
   return (
     <section className="banner" id="about">
@@ -61,14 +58,12 @@ export const Banner = () => {
               my portfolio. I'm
             </span>
             <h1>
-              {/* {`Hi I'm Abhijith Sai `}
-              <br></br> */}
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Let’s create something amazing together! Feel free to explore my
-              skills, experience and projects. If you’d like to connect or
-              collaborate, don’t hesitate to reach out—I'm always open to new
+              Let's create something amazing together! Feel free to explore my
+              skills, experience and projects. If you'd like to connect or
+              collaborate, don't hesitate to reach out—I'm always open to new
               ideas and opportunities.
             </p>
             <button
