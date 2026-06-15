@@ -5,130 +5,72 @@ import "../App.css"; // Assuming your CSS file for additional styles is properly
 
 export const Experience = () => {
   const experiences = [
-   /* {
-      role: "Full Stack Developer",
-      description: [
-        `Developed and maintained Morgan Stanley backend services using Kotlin, Java, Spring Boot, and Hibernate, improving system reliability
-        and reducing downtime by 15% through effective troubleshooting and problem-solving.`,
-        `Architected microservices for core banking functions, accelerating feature deployment by 20% and enhancing modularity
-        through innovative design patterns in Kotlin.`,
-        `Integrated Elastic Search and Kafka for real-time transaction processing and fraud detection, improving data processing
-        efficiency by 18% and reducing response times for critical banking operations.`,
-        `Worked closely within an Agile Environment, consistently meeting 90% of sprint goals and delivering high-quality
-        features for online banking platforms, with a focus on Test Driven Development (TDD) in Kotlin.`,
-        `Enhanced CI/CD pipelines using Jenkins and Docker, reducing deployment times for banking services by 25% and
-        minimizing errors through thorough security scans and testing.`,
-        `Optimized data storage and retrieval for customer accounts and transactions by leveraging Cassandra and PostgreSQL,
-        ensuring scalability and high performance for millions of daily banking operations.`,
-        `Utilized AWS Cloud Services to implement secure, compliant banking solutions, contributing to a 12% reduction in
-        operational costs while maintaining strict financial regulatory standards.`,
-        `Supported production environments for critical banking services by troubleshooting issues and ensuring 99.99% uptime,
-        addressing security risks and regulatory compliance effectively.`,
-        `Implemented robust API security measures using Spring Security and OAuth2, enhancing protection of sensitive financial
-        data and ensuring compliance with banking regulations.`,
-        `Leveraged Kotlin’s null safety features and concise syntax to reduce boilerplate code by 30% in banking microservices,
-        improving code maintainability and reducing potential runtime errors.`,
-      ],
-    },*/
     {
-  role: "Software Developer",
-  company: "T-Mobile",
-  location: "Frisco, TX, USA",
-  duration: "May 2025 - Present",
-  description: [
-    `Contributed to CAMS (Core Account Management Services) modernization by developing and supporting Spring Boot-based microservices handling high-volume customer account operations across distributed environments.`,
-    `Executed Spring Boot upgrades across multiple services (3.5.x), resolving dependency conflicts, configuration drift, and regression issues, improving build stability and reducing environment-specific failures by 30%.`,
-    `Led security vulnerability remediation for 40+ microservices, upgrading vulnerable libraries (OpenSSL, OkHttp, Jackson, Maven plugins) and resolving critical CVEs, ensuring enterprise security compliance and reducing vulnerability backlog to near zero.`,
-    `Implemented enterprise structured logging using Common Logger by replacing legacy Logback across Controller, Service, Endpoint, and Mapper layers, enabling end-to-end request/response traceability and improving MTTR during production incidents.`,
-    `Enabled GUID-based transaction tracing, payload masking, and event classification, significantly improving observability in Splunk dashboards and reducing debugging effort by 40%.`,
-    `Standardized SOAP error handling by enhancing response schemas with statusCategory, errorSystem, and transaction identifiers while maintaining backward compatibility through version-controlled WSDL updates.`,
-    `Contributed to Authorization (AuthZ) integration by implementing gateway token validation and role-based access control policies, strengthening API security posture across services.`,
-    `Supported containerized deployments on Kubernetes (TKE) by building Docker images and executing environment promotions (DEV → QLAB → PROD), including canary deployment validations and rollback verification.`,
-    `Leveraged GitLab CI/CD pipelines to automate builds, vulnerability scans, and deployments, reducing manual release effort and ensuring consistent deployment governance.`,
-    `Provided on-call production support by triaging incidents via Splunk log analysis, identifying upstream vs downstream failures, and coordinating cross-team fixes to restore services within SLA timelines.`,
-    `Assisted in Hystrix resiliency refactoring by validating fallback logic and timeout configurations through backend simulation testing, improving service fault tolerance.`,
-    `Enabled legacy SOAP to modern microservices integrations by implementing contract mapping, payload transformations, and compatibility validation between REST and SOAP layers.`,
-    `Managed secure configuration and secrets using Vault for environment-specific deployments, ensuring compliance with enterprise security standards.`,
-    `Built a lightweight React-based operational dashboard providing real-time visibility into application health, environment-wise deployments, runtime Java/Spring Boot versions, and Git release metadata (deployer, timestamp, commit), enhancing audit traceability and production transparency.`
-  ],
-},
-      {
       role: "Software Developer",
-      company: "Discover",
-      location: "TX, USA",
-      duration: "Aug 2024 - Apr 2025",
+      company: "T-Mobile",
+      location: "Frisco, Texas",
+      duration: "May 2025 – Present",
       description: [
-        `Engineered scalable software solutions using Java, Python, Spring Boot, and microservices architecture, resulting in a
-30% boost in system performance and a 25% reduction in transaction processing times for critical financial operations.`,
-`Optimized database operations with PostgreSQL and MongoDB, reducing query execution times by 40%, improving
-system responsiveness, and enabling seamless high-volume data processing.`,
-`Migrated legacy systems to AWS and Azure, achieving a 20% reduction in infrastructure costs, enhancing scalability, and
-bolstering disaster recovery capabilities.`,
-`Automated build and deployment pipelines using Jenkins, Docker, and Kubernetes, decreasing deployment cycles by 50%
-and ensuring error-free production releases.`,
-`Enhanced application security with Spring Security and encryption protocols, ensuring compliance with PCI DSS and
-mitigating security risks for sensitive customer data.`,
-`Delivered user-friendly, responsive interfaces using React.js, HTML5, CSS3, and Bootstrap, improving customer
-engagement and usability across applications.`,
-`Conducted code reviews, and established best practices, reducing post-launch defects by 15% and fostering a culture of
-continuous improvement.`,
-`Designed RESTful APIs and backend services, facilitating real-time communication with third-party systems and
-enhancing system integration efficiency.`,
+        `Contributed to the Core Account Management Services (CAMS) modernization by developing and supporting Spring Boot based microservices handling high-volume customer account operations.`,
+        `Executed Spring Boot upgrades across multiple applications, resolving dependency conflicts, configuration changes, and regression issues, improving platform stability and build success rates.`,
+        `Enhanced API error handling by standardizing response models and ensuring backward compatibility across versions.`,
+        `Implemented fine-grained authorization logic to validate incoming request tokens against account specific identifiers in the payload, ensuring users can only access or modify resources tied to their own accounts, enforcing contextual access control beyond standard role checks.`,
+        `Implemented structured logging and distributed tracing, enabling end-to-end request visibility and improving debugging efficiency across distributed microservices.`,
+        `Integrated RabbitMQ for asynchronous inter-service communication, improving decoupling and supporting reliable event-driven workflows across the platform.`,
+        `Developed and optimized database queries, indexing strategies, and database interactions using Spring Data JPA to improve application performance and reliability.`,
+        `Built and deployed containerized applications using Docker and Kubernetes, supporting scalable and resilient microservices architecture.`,
+        `Automated CI/CD pipelines using GitLab, enabling faster builds, testing, and deployments with reduced manual effort.`,
+        `Provided production support by analyzing Splunk logs, triaging distributed failures, and coordinating fixes under SLA.`,
+        `Developed internal dashboards using React for monitoring application health, deployments, runtime metrics, and performance across environments.`,
+      ],
+    },
+    {
+      role: "Software Developer",
+      company: "Discover Financial Services",
+      location: "Dallas, Texas",
+      duration: "Aug 2024 – Apr 2025",
+      description: [
+        `Designed and developed a microservices-based claims processing system using Spring Boot, Oracle SQL, React and Kafka, enabling dynamic form rendering, seamless data handling, and real-time tracking of claim statuses and user interactions.`,
+        `Built responsive front-end applications with React, Redux, and RTK Query, optimizing state management, data fetching, and user experience across enterprise-facing tools.`,
+        `Integrated SonarQube into CI/CD pipelines for automated static code analysis, ensuring code quality and early detection of vulnerabilities in Java Spring Boot and front-end applications.`,
+        `Implemented Spring Security and OAuth 2.0 for secure RESTful APIs, enabling role-based access control and robust authentication for internal and third-party users.`,
+        `Integrated Apache Kafka for real-time event streaming and asynchronous communication between distributed services.`,
+        `Deployed and managed scalable infrastructure using Docker and Kubernetes, ensuring fault tolerance, automated scaling, and consistent deployment across environments.`,
+        `Utilized Redis for caching frequently accessed claims data, reducing database load and improving API response times.`,
+        `Integrated Splunk for centralized logging and real-time monitoring, enabling proactive issue detection and operational visibility across services.`,
       ],
     },
     {
       role: "Full Stack Developer",
       company: "Cognizant",
       location: "Hyderabad, India",
-      duration: "Apr 2021 - Dec 2022",
+      duration: "Apr 2021 – Dec 2022",
       description: [
-        `Designed and developed custom single-page applications (SPAs) using React.js, AngularJS, and Tailwind CSS, improving
-operational efficiency for insurance policy and claims management platforms and reducing processing time for key
-workflows.`,
-`Designed scalable, modular applications using Spring Boot and Hibernate, reducing system downtime by 25% and
-streamlining claims validation and premium calculation processes.`,
-`Created and optimized APIs using Postman and SOAP UI, enabling seamless integration with third-party systems for
-real-time insurance quotes and claims tracking.`,
-`Enhanced database performance using PostgreSQL, MySQL, and MongoDB, achieving a 30% improvement in query
-efficiency and ensuring data consistency across modules.`,
-`Secured applications with Spring Security, implementing authentication and authorization protocols that reduced security
-vulnerabilities by 40%.`,
-`Improved deployment pipelines using Jenkins, Docker, and Maven, increasing deployment frequency by 35% while
-minimizing operational risks.`,
-`Developed unit tests with JUnit and Mockito, achieving a 20% reduction in production defects by adhering to Test-Driven
-Development (TDD) practices.`,
-`Collaborated with cross-functional teams to align technical solutions with client requirements, delivering projects within
-stringent deadlines and receiving client commendations.`,
+        `Built scalable insurance policy and claims management applications using Java, Spring Boot, and React, following TDD and Agile practices.`,
+        `Developed Spring Boot microservices with RESTful APIs supporting policy issuance, claims adjudication, and customer onboarding workflows.`,
+        `Implemented event-driven processing using Apache Kafka for reliable, asynchronous handling of claims and policy updates.`,
+        `Built a ReactJS front-end for insurance agents to manage and track policies and claims dynamically.`,
+        `Designed and provisioned AWS infrastructure (EC2, S3, Route 53) and integrated SQS/SNS for real-time insurance notifications and customer communications.`,
+        `Implemented centralized logging with Log4j, reducing error detection and resolution time in production environments.`,
+        `Managed build pipelines using Maven and Gradle; contributed across the full SDLC in an Agile product team.`,
       ],
     },
-
-
     {
-      role: "Junior Software Developer",
+      role: "Jr. Software Developer",
       company: "HSBC Bank",
       location: "Hyderabad, India",
-      duration: "Apr 2020 - Dec 2020",
+      duration: "Apr 2020 – Apr 2021",
       description: [
-        `Built backend microservices using Spring Boot and Hibernate, improving scalability and enabling seamless integration
-with front-end applications, resulting in a 15% increase in operational efficiency.`,
-`Optimized database queries, stored procedures, and triggers in MySQL and PostgreSQL, improving data handling and
-reducing query execution times by 20%.`,
-`Designed and implemented RESTful and SOAP APIs, facilitating secure and efficient data exchange across banking
-systems and third-party integrations.`,
-`Developed dynamic, user-focused web interfaces with AngularJS, HTML5, CSS3, and jQuery, enhancing user satisfaction
-and reducing support tickets by 10%.`,
-`Strengthened security with Spring Security, applying role-based access controls and encryption mechanisms, ensuring
-compliance with internal and external security standards.`,
-`Automated deployment workflows with Jenkins and Docker, reducing manual intervention and deployment errors by 30%.`,
-`Conducted comprehensive testing using JUnit and Mockito, identifying and resolving defects early, leading to a 25%
-improvement in code quality.`,
-`Partnered with cross-functional teams in Agile/Scrum environments to ensure timely delivery of high-priority features,
-consistently meeting sprint goals.`,
+        `Developed and optimized backend microservices using Java 8, Spring Boot, and Spring Data JPA, improving transaction processing by 40%.`,
+        `Designed and deployed RESTful APIs to handle high-volume client requests, ensuring high availability and seamless integration with Angular applications.`,
+        `Automated CI/CD pipelines using Jenkins, increasing deployment efficiency and improving team productivity by 30%.`,
+        `Secured APIs using JWT and OAuth for role-based access control, ensuring compliance with financial security standards.`,
+        `Integrated Prometheus and Grafana for real-time system monitoring, improving observability and performance tuning.`,
+        `Increased code quality with 85% test coverage using JUnit, reducing production issues by 30%.`,
       ],
     },
   ];
 
- 
   const containerStyle = {
     backgroundImage: `url(${colorSharp2})`,
     backgroundSize: "cover",

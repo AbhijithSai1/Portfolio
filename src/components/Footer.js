@@ -30,8 +30,8 @@ export const Footer = () => {
                 abhijithsaiadmits@gmail.com
               </a>{" "}
               <br />
-              <a href="tel:+19714257625">+1 971-425-7625</a> <br />
-                         {/*  Cincinnati, Ohio */}
+              <a href="tel:+15138000058">+1 513-800-0058</a> <br />
+              {/*  Cincinnati, Ohio */}
             </p>
 
             {/* Social Icons */}
@@ -57,7 +57,7 @@ export const Footer = () => {
 
             {/* Copyright Information */}
             <p className="footer-copyright">
-              Copyright © 2024 Abhijith Sai. All Rights Reserved
+              Copyright © 2026 Abhijith Sai. All Rights Reserved
             </p>
           </Col>
         </Row>

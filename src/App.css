@@ -397,47 +397,18 @@ h3 {
 }
 
 /************ Projects Css ************/
-/* General Project Section */
-.project {
-  padding: 60px 0;
-  position: relative;
-  background-color: #f8f9fa; /* Light background for the section */
-}
-
-.project h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.project p {
-  text-align: center;
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 40px;
-}
-
 .project-details-image {
   display: block;
   margin: 20px auto;
-  max-width: 60%; /* Set max-width for smaller image */
+  max-width: 60%;
   height: auto;
-  border-radius: 10px; /* Add rounded corners if desired */
+  border-radius: 10px;
 }
 
 .project-description {
   white-space: pre-line;
   text-align: center;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.project-description {
-  white-space: pre-line; /* This allows \n or line breaks to be rendered as actual line breaks */
-  text-align: center;
-  color: #333;
+  color: #ccc;
   font-size: 16px;
   line-height: 1.8;
 }
@@ -445,22 +416,25 @@ h3 {
 .nav-pills {
   margin-bottom: 20px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .nav-pills .nav-link {
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 50px;
-  background-color: #007bff; /* Default button color */
+  background-color: #007bff;
   color: white;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link.active {
-  background-color: #0056b3; /* Color when hovered or active */
+  background-color: #0056b3;
   color: #fff;
 }
 
@@ -473,7 +447,7 @@ h3 {
 .project {
   padding: 60px 0;
   position: relative;
-  background-color: #151515; /* Dark background for consistency */
+  background-color: #151515;
   color: #fff;
 }
 
